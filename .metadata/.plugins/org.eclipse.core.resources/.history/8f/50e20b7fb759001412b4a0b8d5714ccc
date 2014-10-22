@@ -1,0 +1,43 @@
+
+public class IClickerService {
+	private Student[] students = null;
+	private Question[] questions = null;
+	public IClickerService()
+	{
+		students = null;
+		questions = null;
+	}
+	
+	public IClickerService(Student[] S, Question[] Q)
+	{	
+		students = new Student[S.length];
+		questions = new Question[Q.length];
+			
+		for(int i=0; i<S.length; i++)
+		{
+			students[i].setID(S[i].getID()); 
+		}
+		
+		for(int i=0; i<S.length; i++)
+		{
+			students[i].setID(S[i].getID()); 
+		}
+		
+		for(int i=0; i<Q.length; i++)
+		{
+			questions[i].setQuest(Q[i].getQuest());
+			questions[i].setAnswer(Q[i].getAnswer());
+			questions[i].setChoices(Q[i].getChoices());
+		}
+	}
+	
+	public void play()
+	{
+		for(int i=0; i<questions.length; i++)
+		{
+		System.out.printf("/s\n",questions[i].getQuest());
+		questions[i].displayChoices();
+		}
+	}
+
+}

@@ -1,0 +1,52 @@
+import java.util.Scanner;
+import java.util.Random;
+
+
+public class SimulationDriver {
+
+	public static void main(String[] args) {
+		
+		int numofStudents, numofQuestions;
+		System.out.println("This is an IClicker Service");
+		System.out.println("Please Enter the number of questions");
+		Scanner in = new Scanner(System.in);
+		numofStudents = in.nextInt();
+		System.out.println("Please Enter the number of Students taking the quiz");
+		numofQuestions = in.nextInt();
+		
+		Student[] StuArray = new Student[numofStudents];
+		Question[] QArray = new Question[numofQuestions];
+		
+
+	}
+	
+	private Student[] initializeStudents(Student[] S)
+	{
+		int uniqueID = generateID();
+		for(int i=0; i<S.length; i++)
+		{
+			
+			uniqueID = generateID();
+			S[i].setID(uniqueID);
+		}
+		return S;
+	}
+
+	private int generateID() {
+		
+		Random rand = new Random();
+		return rand.nextInt((1000000-9999999)+1)+1000000;
+		
+	}
+	
+	private boolean Unique(int id, Student[] s)
+	{
+		for(int i=0; i<s.length; i++)
+		{
+			if(s[i].getID()==id)
+				return false;
+		}
+		return true;
+	}
+
+}

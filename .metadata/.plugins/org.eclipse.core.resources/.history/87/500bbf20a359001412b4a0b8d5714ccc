@@ -1,0 +1,8 @@
+
+public class Question {
+private String quest;
+private String answer;
+private String[] options;
+public Question(){ }
+
+}

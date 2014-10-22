@@ -1,0 +1,10 @@
+
+abstract class Question {
+private String quest;
+private String answer;
+private int numofchoices;
+public Question()
+{
+
+}
+}

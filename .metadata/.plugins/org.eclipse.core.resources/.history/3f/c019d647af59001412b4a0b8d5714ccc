@@ -1,0 +1,11 @@
+
+public class IClickerService {
+	private Student[] students;
+	private Question[] questions;
+	
+	public IClickerService(Student[] S, Question[] Q)
+	{
+		
+	}
+
+}

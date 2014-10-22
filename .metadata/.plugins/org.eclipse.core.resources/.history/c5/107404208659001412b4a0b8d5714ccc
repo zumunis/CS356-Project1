@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SimulationDriver {
+
+	public static void main(String[] args) {
+		
+		int numofStudents, numofQuestions;
+		System.out.println("This is an IClicker Service");
+		System.out.println("Please Enter the number of questions");
+		Scanner in = new Scanner(System.in);
+		numofStudents = in.nextInt();
+		System.out.println("Please Enter the number of Students taking the quiz");
+		numofQuestions = in.nextInt();
+		
+		Student[] StuArray = new Student[numofStudents];
+		Question[] QArray = new Question[numofQuestions];
+		
+
+	}
+
+}

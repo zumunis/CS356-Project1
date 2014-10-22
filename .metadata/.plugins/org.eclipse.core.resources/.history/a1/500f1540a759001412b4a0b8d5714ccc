@@ -1,0 +1,21 @@
+
+public class Student {
+	private int ID;
+	public Student()
+	{
+		this.ID = 0;
+	}
+	public Student(int id)
+	{
+		this.ID = id;
+	}
+	public void setID(int id)
+	{
+		this.ID =id;
+	}
+	public int getID()
+	{
+		return this.ID;
+	}
+
+}

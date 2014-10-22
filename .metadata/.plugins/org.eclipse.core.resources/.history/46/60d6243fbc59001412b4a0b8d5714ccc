@@ -1,0 +1,7 @@
+import java.util.HashMap;
+
+
+public class Results extends IClickerService {
+ private HashMap map;
+ 
+}

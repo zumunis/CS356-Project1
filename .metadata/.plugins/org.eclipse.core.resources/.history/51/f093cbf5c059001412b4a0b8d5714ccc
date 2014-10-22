@@ -1,0 +1,23 @@
+import java.util.HashMap;
+
+
+public class Results extends IClickerService {
+ private HashMap map;
+ public Results()
+ {
+	 map = new HashMap();
+ }
+ public Results(Student[] S, Question[] Q)
+ {
+	 super(S,Q);
+	 map = new HashMap();
+	 populateMap(S);
+ }
+private void populateMap(Student[] s) {
+	for (int i=0; i<s.length; i++)
+	{
+		
+	}
+	
+}
+}

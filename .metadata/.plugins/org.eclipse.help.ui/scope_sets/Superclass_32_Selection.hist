@@ -1,0 +1,5 @@
+#Wed Oct 22 00:12:25 PDT 2014
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.help.ui.localSearch.master=true
+expression=Superclass Selection
