@@ -1,3 +1,9 @@
+/* Zaki U Munis
+ * Assignment 1
+ * CS 356
+ * Oct 22, 2014
+ */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
