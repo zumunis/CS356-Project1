@@ -29,29 +29,27 @@ public class Student {
 		return answers;
 	}
 	
-	public void displayAns(Question[] Q)
+	public void displayAns()
 	{
-		String check = null;
+		
 		for(int i=0; i<answers.size(); i++)
 		{
-			check = check(answers.get(i), Q[i]);
-			System.out.print(answers.get(i) + " " + check +" ");
+			System.out.print(answers.get(i) + " ");
 		}
 		
 	}
-	private String check(String ans,Question Q)
+	public ArrayList<String> checkAns(Question[] Q)
 	{
-
-		String check = null;
-
-			if(Q.getAnswer().compareTo(ans)==0)
+		ArrayList<String> grading = new ArrayList<String>();
+		for (int i=0; i<Q.length; i++)
+		{
+			if(Q[i].getAnswer().compareTo(answers.get(i))==0)
 			{
-				check = "Correct";
+				grading.add("Correct");
 			}
-			else{ check = "Incorrect";}
+			else{ grading.add("Incorrect");}
 				
-		
-		return check;
+		}
 	}
 
 }

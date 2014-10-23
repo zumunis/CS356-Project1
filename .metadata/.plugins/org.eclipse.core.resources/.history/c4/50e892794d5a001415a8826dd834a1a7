@@ -30,13 +30,13 @@ public void updateResults(Student[] s)
 		map.put(s[i].getID(), s[i].getAns());
 	}
 }
-public void displayResults(Student[] s,Question[] Q)
+public void displayResults(Student[] s)
 {
 	for (int i=0; i<s.length; i++)
 	{
 		System.out.print("Student-ID: " + s[i].getID() + " ");
 		
-		s[i].displayAns(Q);
+		s[i].displayAns();
 		System.out.println();
 	}
 }

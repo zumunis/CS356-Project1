@@ -28,11 +28,11 @@ public class SimulationDriver {
 		
 		IClickerService Quiz = new IClickerService();
 		Quiz = new IClickerService(StuArray, QArray);
-		Quiz.play(StuArray, QArray);
+		Quiz.play();
 		
 		Results R = new Results(StuArray, QArray);
 		R.updateResults(StuArray);
-		R.displayResults(StuArray, QArray);
+		R.displayResults(StuArray);
 		
 
 	}
@@ -45,7 +45,7 @@ public class SimulationDriver {
 		int num=1;
 		for(int i=0; i<qArray.length; i++)
 		{
-			
+			num += i;
 			qArray[i] = new Question();
 			System.out.println("Please Enter the Question " + num);
 			quest = in.nextLine();
@@ -54,7 +54,6 @@ public class SimulationDriver {
 			System.out.println("Please Enter the correct answer for Question " + num);
 			ans = in.nextLine();
 			SetupQuestion(qArray[i], quest, ans, choices);
-			num ++;
 		}
 		
 	}
